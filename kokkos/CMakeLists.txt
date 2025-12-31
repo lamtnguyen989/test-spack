@@ -9,5 +9,6 @@ find_package(Kokkos REQUIRED)
 set(SRC_DIR ".")
 set(SRC_FILE ${SRC_DIR}/bit-reversal-kokkos.cpp)
 
+# Executables
 add_executable(bitReversal ${SRC_FILE})
 target_link_libraries(bitReversal Kokkos::kokkos)

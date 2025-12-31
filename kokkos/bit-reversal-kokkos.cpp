@@ -1,18 +1,17 @@
 #include <Kokkos_Core.hpp>
-#include <iostream>
-#include <type_traits>
 
 int main(int argc, char* argv[])
 {
     Kokkos::initialize(argc, argv);
+    {
+        // Checking execution space
+        Kokkos::printf("Backend: %s\n", Kokkos::DefaultExecutionSpace::name());
 
-    // Checking execution space
-    std::cout   << "Backend: " 
-                << Kokkos::DefaultExecutionSpace::name() 
-                << std::endl;
-
-    // Bit reversal stuff (TODO)
-    //Kokkos::View<int *> array("default", 16);
-
+        // Bit reversal stuff
+        size_t length = 16;
+        Kokkos::View<unsigned int *> array("array", length);
+        Kokkos::parallel_for("fill", length, KOKKOS_LAMBDA(int k) { array(k) = k; });
+    }
     Kokkos::finalize();
+    return 0;
 }

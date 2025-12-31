@@ -501,7 +501,6 @@ CMakeFiles/bitReversal.dir/bit-reversal-kokkos.cpp.o: /home/max/Downloads/test-s
   /usr/include/c++/15.2.1/initializer_list \
   /usr/include/c++/15.2.1/ios \
   /usr/include/c++/15.2.1/iosfwd \
-  /usr/include/c++/15.2.1/iostream \
   /usr/include/c++/15.2.1/istream \
   /usr/include/c++/15.2.1/limits \
   /usr/include/c++/15.2.1/map \
@@ -605,7 +604,7 @@ bitReversal: /home/max/spack/opt/spack/linux-zen5/cuda-13.0.2-tfngpjiwyckc7shkw6
   /home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/lib/libkokkoscontainers.so.4.7.2 \
   /home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/lib/libkokkoscore.so.4.7.2 \
   /home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/lib/libkokkossimd.so.4.7.2 \
-  /tmp/tmpxft_000415ab_00000000-6_bitReversal_dlink.o \
+  /tmp/tmpxft_0004207d_00000000-6_bitReversal_dlink.o \
   /usr/lib/Scrt1.o \
   /usr/lib/crti.o \
   /usr/lib/crtn.o \
@@ -672,8 +671,6 @@ CMakeFiles/bitReversal.dir/bit-reversal-kokkos.cpp.o:
 /usr/lib/crti.o:
 
 /usr/lib/Scrt1.o:
-
-/tmp/tmpxft_000415ab_00000000-6_bitReversal_dlink.o:
 
 /home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/lib/libkokkossimd.so.4.7.2:
 
@@ -748,8 +745,6 @@ CMakeFiles/bitReversal.dir/bit-reversal-kokkos.cpp.o:
 /usr/include/c++/15.2.1/version:
 
 /usr/include/c++/15.2.1/vector:
-
-/usr/include/c++/15.2.1/utility:
 
 /home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/include/impl/Kokkos_TeamMDPolicy.hpp:
 
@@ -1007,6 +1002,8 @@ CMakeFiles/bitReversal.dir/bit-reversal-kokkos.cpp.o:
 
 /home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/include/impl/Kokkos_Profiling.hpp:
 
+/usr/include/c++/15.2.1/utility:
+
 /home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/include/Kokkos_DetectionIdiom.hpp:
 
 /home/max/spack/opt/spack/linux-zen5/cuda-13.0.2-tfngpjiwyckc7shkw6ceeosfgrxx34yp/targets/x86_64-linux/include/sm_32_atomic_functions.hpp:
@@ -1022,6 +1019,10 @@ CMakeFiles/bitReversal.dir/bit-reversal-kokkos.cpp.o:
 /usr/include/bits/fp-fast.h:
 
 /home/max/spack/opt/spack/linux-zen5/cuda-13.0.2-tfngpjiwyckc7shkw6ceeosfgrxx34yp/targets/x86_64-linux/include/sm_20_intrinsics.hpp:
+
+/usr/include/features-time64.h:
+
+/home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/include/desul/atomics/Operator_Function_Objects.hpp:
 
 /home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/include/Kokkos_MathematicalConstants.hpp:
 
@@ -1547,12 +1548,6 @@ CMakeFiles/bitReversal.dir/bit-reversal-kokkos.cpp.o:
 
 /usr/include/bits/mathcalls.h:
 
-/usr/include/features-time64.h:
-
-/home/max/spack/opt/spack/linux-zen5/kokkos-4.7.02-xtaiwypazjt5ux2bppimvnh6inrxqrtv/include/desul/atomics/Operator_Function_Objects.hpp:
-
-/usr/include/c++/15.2.1/iostream:
-
 /usr/include/bits/pthreadtypes-arch.h:
 
 /home/max/spack/opt/spack/linux-zen5/cuda-13.0.2-tfngpjiwyckc7shkw6ceeosfgrxx34yp/targets/x86_64-linux/include/sm_35_intrinsics.h:
@@ -1872,6 +1867,8 @@ CMakeFiles/bitReversal.dir/bit-reversal-kokkos.cpp.o:
 /usr/include/c++/15.2.1/pstl/glue_memory_defs.h:
 
 /usr/include/c++/15.2.1/set:
+
+/tmp/tmpxft_0004207d_00000000-6_bitReversal_dlink.o:
 
 /usr/include/c++/15.2.1/sstream:
 
