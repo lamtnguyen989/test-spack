@@ -1,16 +1,14 @@
 #include <Kokkos_Core.hpp>
 
-KOKKOS_INLINE_FUNCTION unsigned int bit_reverse(unsigned int indx, unsigned int N)
+/* Functions and kernels decleartions */
+KOKKOS_INLINE_FUNCTION unsigned int bit_reverse(unsigned int indx, unsigned int N);
+
+
+
+KOKKOS_INLINE_FUNCTION unsigned int bit_reverse(unsigned int indx, unsigned int log2)
 {
     // Result
     unsigned int index_bit_reversed = 0;
-
-    // Calculate log2(N) a.k.a the number of bits of N
-    unsigned int log2 = 0;
-    while (N > 1) {
-        log2++;
-        N >>= 1;
-    }
 
     // Reverse the index
     for (unsigned int k = 0; k < log2; k++){
@@ -47,15 +45,22 @@ int main(int argc, char* argv[])
         Kokkos::fence();
         Kokkos::printf("\n");
 
+        // Computing the log2(length) a.k.a. number of bits of the length
+        unsigned int N = length;
+        unsigned int log2 = 0;
+        while (N > 1) {
+            log2++;
+            N >>= 1;
+        }
+
         // Bit-reversing the array
         Kokkos::parallel_for("bit_reverse", length, 
             KOKKOS_LAMBDA(unsigned int k) {
                 unsigned int val = array(k);
-                unsigned int reversed_index = bit_reverse(k, length);
+                unsigned int reversed_index = bit_reverse(k, log2);
                 array(reversed_index) = val;
             }
         );
-        Kokkos::fence();
 
         // Peeking reversed array
         Kokkos::parallel_for("print_rev", length, KOKKOS_LAMBDA(unsigned int k) { Kokkos::printf("%d ", array(k));});
