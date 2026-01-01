@@ -1,3 +1,0 @@
-/home/max/Downloads/test-spack/kokkos/build/CMakeFiles/bitReversal.dir
-/home/max/Downloads/test-spack/kokkos/build/CMakeFiles/edit_cache.dir
-/home/max/Downloads/test-spack/kokkos/build/CMakeFiles/rebuild_cache.dir
