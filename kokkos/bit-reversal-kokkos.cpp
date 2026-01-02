@@ -1,7 +1,7 @@
 #include <Kokkos_Core.hpp>
 
 /* Functions and kernels decleartions */
-KOKKOS_INLINE_FUNCTION unsigned int bit_reverse(unsigned int indx, unsigned int N);
+KOKKOS_INLINE_FUNCTION unsigned int bit_reverse(unsigned int indx, unsigned int log2);
 
 
 

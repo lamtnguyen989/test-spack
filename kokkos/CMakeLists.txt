@@ -12,3 +12,7 @@ set(SRC_FILE ${SRC_DIR}/bit-reversal-kokkos.cpp)
 # Executables
 add_executable(bitReversal ${SRC_FILE})
 target_link_libraries(bitReversal Kokkos::kokkos)
+
+# Optimization
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
