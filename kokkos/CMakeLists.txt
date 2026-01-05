@@ -1,6 +1,6 @@
 # Bits and bobs of any basic Cmake
 cmake_minimum_required(VERSION 3.22)
-project(bitReversal)
+project(bitReversal LANGUAGES CXX)
 
 # finding Kokkos
 find_package(Kokkos REQUIRED)
@@ -12,7 +12,3 @@ set(SRC_FILE ${SRC_DIR}/bit-reversal-kokkos.cpp)
 # Executables
 add_executable(bitReversal ${SRC_FILE})
 target_link_libraries(bitReversal Kokkos::kokkos)
-
-# Optimization
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
-set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
